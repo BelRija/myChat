@@ -1,0 +1,5 @@
+ applications:
+ - name: mychat
+   memory: 128M
+   host: mychat
+   buildpack: staticfile_buildpack
