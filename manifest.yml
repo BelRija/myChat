@@ -1,5 +1,5 @@
  applications:
- - name: mychat
+ - name: mychatcc
    memory: 128M
-   host: mychat
+   host: mychatcc
    buildpack: staticfile_buildpack
