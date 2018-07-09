@@ -2,4 +2,3 @@
  - name: mychatcc
    memory: 128M
    host: mychatcc
-   buildpack: staticfile_buildpack
