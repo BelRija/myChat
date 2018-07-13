@@ -1,11 +1,13 @@
 var express = require('express');
 var app = express();
+let port = process.env.PORT || process.env.VCAP_APP_PORT || 3000;
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 var router = express.Router();
 const bodyParser = require('body-parser');
 var fs  = require('fs');
 var path = require('path');
+
 
 //Array with users as object
 var clientsobj=[];
@@ -202,6 +204,6 @@ function deleteUser(username){
 }
 
 // --- Start the server ---
-http.listen(3000, function(){
-  console.log('listening on *:3000');
+http.listen(port, function(){
+  console.log('listening on '+port);
 });
